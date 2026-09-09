@@ -59,6 +59,8 @@ Translate the request into one clear image instruction while preserving all expl
 
 ## Generate
 
+普通生成请求默认直接执行，不要先做 dry-run、resolve-size 或 self-test；`--dry-run` 仅在用户明确要求时使用。
+
 Default 2K model or saved model:
 
 ```powershell
@@ -121,7 +123,7 @@ node "<PLUGIN_ROOT>/scripts/generate.mjs" --edit --model gpt-image-2.5-sunburst 
 
 Supported ratios: `1:1`, `3:2`, `2:3`, `4:3`, `3:4`, `16:9`, `9:16`, `2:1`, `1:2`, `7:4`, `4:7`.
 
-Unsupported ratios are rejected before any paid request. Use `--resolve-size` and `--dry-run` before paid work. Important mappings:
+Unsupported ratios are rejected before any paid request. 普通请求默认直接生成，不要求先 dry-run；`--dry-run`/`--resolve-size` 仅在用户明确要求或做工作流/批量验算时使用。Important mappings:
 
 - `gpt-image-2.5-flare` 16:9 → `2048x1152`.
 - `gpt-image-2.5-sunburst` 16:9 → `3840x2160`.
