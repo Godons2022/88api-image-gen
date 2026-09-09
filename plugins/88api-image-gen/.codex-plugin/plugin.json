@@ -1,0 +1,25 @@
+{
+  "name": "88api-image-gen",
+  "version": "2.0.5",
+  "description": "来自 88api.ai Token 聚合站的 Codex 生图插件，支持 GPT-Image-2.5 Flare / Sunburst、SSE 与批量工作流。",
+  "author": {
+    "name": "88api.ai"
+  },
+  "homepage": "https://88api.ai/",
+  "repository": "https://github.com/blackdm666/88API-image-gen",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "88API-Image-Gen",
+    "shortDescription": "GPT-Image-2.5 默认 Flare，可选 Sunburst、批量出图与图生图。",
+    "longDescription": "通过 88API 生成和编辑图片。默认使用 GPT-Image-2.5 Flare（2K，速度最优），需要更高精度与控制时可选 GPT-Image-2.5 Sunburst（4K）；支持文生图、图生图、多参考图、批量出图与工作流任务。",
+    "developerName": "88api.ai",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "brandColor": "#18A9B0",
+    "composerIcon": "./assets/composer-icon.png",
+    "logo": "./assets/plugin-logo.png",
+    "logoDark": "./assets/plugin-logo-dark.png",
+    "websiteURL": "https://88api.ai/",
+    "defaultPrompt": "使用 $88api-image-gen 生成或编辑图片。开始前自动检查 88API Key；若未配置，主动让我提供 Key，并由你一键保存和脱敏验证，不要让我运行 PowerShell。普通任务使用默认 GPT-Image-2.5 Flare，明确要求高精度/更高分辨率时使用 GPT-Image-2.5 Sunburst。"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "88api-plugins",
+  "interface": {
+    "displayName": "88API-Image-Gen"
+  },
+  "plugins": [
+    {
+      "name": "88api-image-gen",
+      "source": {
+        "source": "local",
+        "path": "./plugins/88api-image-gen"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
